@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWO COLUMN LAYOUT WITH FLOAT</title>
+    <style>
+    .container {
+        width: 100%;
+        background-color: rgb(227, 227, 49);
+        padding: 10px;
+    }
+    .sidebar {
+        float: left;
+        width: 25%;
+        background-color: lightblue;
+        padding: 10px;
+    }
+    .main-content {
+        float: right;
+        width: 70%;
+        background-color: lightgreen;
+        padding: 10px;
+    }
+    .footer {
+        clear: both; /* Ensures that the footer appears below both floated elements */
+        background-color: lightcoral;
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">Sidebar Content</div>
+        <div class="main-content">Main Content</div>
+        <div class="footer">Footer Content</div>
+    </div>
+</body>
+</html>
