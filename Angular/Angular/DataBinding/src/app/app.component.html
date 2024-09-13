@@ -1,0 +1,23 @@
+<!-- Data Binding Example Component to Template-->
+ <div>
+  <!-- String Interpolation -->
+  <h1>example on string Interpolation {{title}}</h1>
+  <h1>Hello {{username}}</h1>
+  <h2>Addition of {{a}} and {{b}} is {{a+b}}</h2>
+  <img src="{{imgURL}}" alt="{{username}}">
+  <!-- string Interpolation always takes value as string  
+    button is not enabled though we pass value as boolean, 
+   string Interpolation always treats value as a string -->
+   <button disabled="{{isDisabled}}">click me 1</button>
+   <!-- Property Binding -->
+    <!-- Here button 1 and Button 2 have same disabled value false
+     but button 1 is treating as string and button 2 is treating as property value 
+     true value for disabled property will be same for both-->
+   <h1>example on Property {{title}}</h1>
+   <button [disabled]="isDisabled">click me 2</button>
+    <div [class]="isGood?'x':'y'">
+      Event binding is applied to div and my color is {{isGood?'BLUE':'RED'}}
+    </div>
+    <!-- Event Binding -->
+     <button [disabled]="isDisabled" onclick="Fun2()"> click me 3</button>     
+ </div>
