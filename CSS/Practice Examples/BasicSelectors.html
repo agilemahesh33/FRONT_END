@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,4 +51,58 @@
     </div>
     <span>This is a span 3</span></span>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    <style>
+        /*Universal Selector*/
+        * {
+            background-color: aquamarine;            
+        }
+        /*Tyle Selector or Element Selector*/
+        span {
+            font-style: italic;
+            color: blue;
+        }
+        
+        /*Class Selector*/
+        .MyClassStyle {
+            padding-left: 70px;
+            text-decoration: underline;
+            background: rgba(133,133,350,0.5);
+        }
+        /*ID Selector*/
+        #MyID {
+            background: greenyellow;
+            text-decoration: dotted;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div class="MyClassStyle">This is a div</div>
+    <span>This is a span 1</span>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li class="MyClassStyle">Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <span id="MyID">This is a span 2</span></span>
+    </ul>
+    <div>
+        <label for="username">User Name :</label>
+        <input class="MyClassStyle" type="text" name="username" id="username" value="Text box is padded to Left....">
+    </div>
+    <span>This is a span 3</span></span>
+</body>
+>>>>>>> d2e8088f0794591597c52362369ce540b6215b66
 </html>

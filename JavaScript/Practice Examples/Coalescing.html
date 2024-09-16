@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Hello Coalescing</h1> 
 <p id="print_arr"></p> 
 <script> 
@@ -11,3 +12,18 @@
 	.innerText = arr.toString(); 
 		//console.log(arr) 
 </script>
+=======
+<h1>Hello Coalescing</h1> 
+<p id="print_arr"></p> 
+<script> 
+	let arr = [1, 2, "apple", null, undefined, []] 
+	
+	// Replace each nullish values with "RAM" 
+	arr.forEach((item, index)=>{ 
+	arr[index] ??= "RAM" 
+		}) 	
+		document.getElementById("print_arr") 
+	.innerText = arr.toString(); 
+		//console.log(arr) 
+</script>
+>>>>>>> d2e8088f0794591597c52362369ce540b6215b66
