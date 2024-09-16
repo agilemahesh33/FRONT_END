@@ -1,0 +1,10 @@
+<!-- app.component.html -->
+<div id="input">
+  <input type="text" [(ngModel)]="mn"  placeholder="Enter Movie Name">
+  <input type="text" [(ngModel)]="mu" placeholder="Enter Image URL">
+  <input type="button" (click)="ShowMovie()" value="Click me">
+</div>
+<div id="output" [class]="isShow?'show':'hide'">
+  <img src="{{txtMovieURL}}" alt="{{txtMovieName}}">  
+  <h2>{{txtMovieName}}</h2>  
+</div>

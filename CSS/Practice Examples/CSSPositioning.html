@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <style>
+        .static-element {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .relative-element {
+            position: relative;
+            top: 20px;
+            left: 10px;
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .container {
+            position: relative;
+            height: 200px;
+            background-color: lightgray;
+            margin-bottom: 10px;
+        }
+        .absolute-element {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        .fixed-element {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: lightsalmon;
+            padding: 10px;
+        }
+        .sticky-element {
+            position: sticky;
+            top: 0;
+            background-color: lightseagreen;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .content {
+            height: 1500px; /* Long content to demonstrate scroll effects */
+            padding: 20px;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="static-element">Static Element (default)</div>
+    <div class="relative-element">Relative Element</div>
+    <div class="container">
+        <div class="absolute-element">Absolute Element</div>
+    </div>
+    <div class="sticky-element">Sticky Element</div>
+    <div class="content">
+        Scroll down to see the effect of the fixed element at the bottom right corner of the viewport.
+    </div>
+    <div class="fixed-element">Fixed Element</div>
+</body>
+</html>

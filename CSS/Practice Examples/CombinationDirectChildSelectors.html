@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combination Direct Child Selectors</title>
+    <style>
+    /*Direct Child Selector */
+    ul > li{
+        background: purple;
+    }
+    span > b{
+        background-color: blueviolet;
+        font-size: 33px;
+    }
+    div > .green{
+        color: green;
+    }
+    </style>
+</head>
+<body>    
+    <div>This is a div1</div>    
+    <span>
+        <p>
+            <b>This is a span 1 Not direct Child</b>
+        </p>
+    </span>
+    <div>
+        <span>
+            <b>This is nested elements 1</b>
+        </span>
+    </div>    
+    <div>
+        <span>
+            <b><i class="green">This is nested elements 2</i></b>
+        </span>
+    </div>    
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <span>This is a span 2</span></span>
+        <div>This is a div3</div>
+    </ul>
+    <div>
+        <label class="green" for="username">User Name :</label>
+        <input style="color:pink;" type="text" name="username" id="username" value="Text box is padded to Left....">
+    </div>
+    <div>
+        <H1 class="green">This is H1</H1>        
+    </div>
+    <span>This is a span 3</span></span>
+</body>
+</html>

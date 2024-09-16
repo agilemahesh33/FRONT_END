@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+    .block-element {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: lightblue;
+    }
+    .inline-element {
+        display: inline;
+        padding: 5px;
+        background-color: lightgreen;
+    }
+    .inline-block-element {
+        display: inline-block;
+        width: 150px;
+        padding: 10px;
+        background-color: lightcoral;
+        margin: 5px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: lightgray;
+    }.flex-item {
+        padding: 10px;
+        background-color: lightpink;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        background-color: lightyellow;
+    }
+    .grid-item {
+        background-color: lightseagreen;
+        padding: 20px;
+        text-align: center;
+    }
+    .hidden-element {
+        display: none;
+    }
+    .table {
+        display: table;
+        width: 100%;
+        background-color: lightblue;
+    }
+    .table-row {
+        display: table-row;
+    }
+    .table-cell {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid #333;
+    }
+    .inline-flex-container {
+        display: inline-flex;
+        background-color: lightgreen;
+    }
+    .inline-flex-item {
+        padding: 10px;
+        margin: 5px;
+        background-color: lightcoral;
+    }
+    .inline-grid-container {
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        background-color: lightcyan;
+    }
+    .inline-grid-item {
+        background-color: lightsalmon;
+        padding: 10px;
+        text-align: center;
+    }
+    hr {
+        border: 3px solid #0df231;
+        border-radius: 5px;;
+    }
+    </style>
+</head>
+<body>
+    <div class="block-element">This is a block-level element</div>    
+    <hr>
+    <span class="inline-element">This is an inline element</span>
+    <span class="inline-element">This is another inline element</span>
+    <hr>
+    <div class="inline-block-element">This is an inline-block element</div>
+    <div class="inline-block-element">This is another inline-block element</div>
+    <hr>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>    
+    <hr>
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+        <div class="grid-item">Grid Item 5</div>
+        <div class="grid-item">Grid Item 6</div>
+    </div>    
+    <hr>
+    <div class="hidden-element">This element is hidden and won't be visible</div>
+    <hr>
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell">Row 1, Cell 1</div>
+            <div class="table-cell">Row 1, Cell 2</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Row 2, Cell 1</div>
+            <div class="table-cell">Row 2, Cell 2</div>
+        </div>
+    </div>    
+    <hr>
+    <div class="inline-flex-container">
+        <div class="inline-flex-item">Item 1</div>
+        <div class="inline-flex-item">Item 2</div>
+    </div>    
+    <hr>
+    <div class="inline-grid-container">
+        <div class="inline-grid-item">Item 1</div>
+        <div class="inline-grid-item">Item 2</div>
+    </div>    
+    <hr>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Pseudo Class State</title>
+    <style>
+        /*Selectors Pseudo Class State*/
+        li:hover{
+            background: blueviolet;
+        }
+        a.highlight:hover {
+        color: #ff0000;
+        font-size: 22px;
+        }
+        input:focus{
+            background: blue;
+        }
+        input:required{
+            background: yellow;
+        }
+        input:checked{            
+            margin: 50px;
+        }
+        input:disabled{            
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>    
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+</ul>    
+<div>
+    <label for="txtUsername">User Name : </label>
+    <input type="text" id="txtUsername"/>
+</div><br>
+<div>
+    <label for="txtFirstname">First Name : </label>
+    <input required type="text" id="txtFirstname"/>
+</div>
+<div>
+    <input checked type="checkbox" id="txtFirstname"/>
+</div>
+<div>
+    <input disabled type="checkbox" id="txtFirstname"/>
+</div>
+<p>When you hover over the first link below, it will change color and font size:</p>
+
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+<p><a href="default.asp">CSS Tutorial</a></p>
+</body>
+</html>
