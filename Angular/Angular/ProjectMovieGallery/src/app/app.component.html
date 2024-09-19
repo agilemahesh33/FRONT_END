@@ -1,0 +1,6 @@
+<div>Mystery Movie List</div>
+<div class="Movies">
+  <div *ngFor="let m of Movies" class="Movie">    
+    <a href="https://www.imdb.com/title/{{m.imdbId}}" target="_blank"><img src="{{m.posterURL}}" alt="{{m.title}}" width="150px"><h3>{{m.title}}</h3></a>
+  </div>
+</div>

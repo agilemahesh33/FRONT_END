@@ -1,17 +1,18 @@
 .Wines{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 20px;
+    gap: 40px;
 }
 .Wine{
     padding: 20px;
     border-radius: 9px;
-    box-shadow: 3px 5px lightcyan;
+    box-shadow: 3px 5px brown;
     align-items:center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-.Wine:hower{
-    transform: scale(1.5);
+.Wine:hover{
+    transform: scale(1.17);
+    
 }
