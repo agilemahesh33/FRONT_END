@@ -1,0 +1,7 @@
+<h2>Our Products Your Choice</h2>
+<div class="Wines">
+<div *ngFor="let w of Wines" class="Wine">
+  <img src="{{w.image}}" alt="{{w.wine}}" height="300px" width="100px">
+  <h3><strong>{{w.winery}}</strong>Average Ratings : {{w.rating.average}} ({{w.rating.reviews}})</h3>
+</div>
+</div>

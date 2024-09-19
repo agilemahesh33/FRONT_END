@@ -1,0 +1,55 @@
+<!-- app.component.html -->
+<!-- ngIf Example -->
+<!-- This directive adds or removes an element based on the condition. -->
+<h2>Example of ngFor</h2>
+<div class="Model" *ngIf="isVisible">
+  <div><h2>Hello This is ngIf</h2><button (click)="Show1()">❌</button></div>
+  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident, itaque accusantium illo expedita veniam quia adipisci distinctio dolorum nisi! Eum facilis quia blanditiis quaerat soluta harum quis! Reiciendis, odit.</h2>
+</div>
+<div>
+  <button (click)="Show2()">🪟</button>
+</div>
+<hr>
+<!-- ngFor : This directive repeats a block of HTML for each item in a list. -->
+<div>
+  <h2>Example of ngFor</h2>
+  <ul>
+    <li *ngFor="let item of myArray">{{item}}</li>
+  </ul>
+</div>
+<hr>
+<div>
+  <label for="WeekDays">Enter Week Number : </label>
+  <input type="text" id="WeekDays" name="WeekDays" (change)="getDay()" [(ngModel)]="WDno" placeholder="Enter digit between 0 to 6">
+  <ul>
+    <li>
+    <h2>{{WDno}} : {{WeekDays[WDno]}}</h2>
+    </li>
+</ul>
+</div>
+<hr>
+<!-- ngSwitch : This directive conditionally displays elements based on an expression. -->
+ <div>
+  <h2>Example of ngSwitch</h2>
+<label for="fruits">Choose a fruit : </label>
+<select id="fruits" name="fruits" [(ngModel)]="ddSI">
+  <option value="">--Select a fruit--</option>
+  <option value="apple">Apple</option>
+  <option value="banana">Banana</option>
+  <option value="cherry">Cherry</option>
+  <option value="grape">Grape</option>
+</select>&nbsp;
+<button (click)="SelectFun()">Submit</button>
+</div>
+<div id="SelectedContent" *ngIf="isSelected">
+  <h2>{{ddSelectedItem}}</h2>
+</div><hr>
+<div>
+  <h3>Dynamic buttons Created depend on size of array<br>Select a Fruit:</h3>
+  <button *ngFor="let fruit of fruits; let i = index" (click)="selectFruit(i)">
+    {{ fruit }}
+  </button>
+  <p *ngIf="selectedFruit !== undefined">
+    You selected: {{ selectedFruit }}
+  </p>
+</div>

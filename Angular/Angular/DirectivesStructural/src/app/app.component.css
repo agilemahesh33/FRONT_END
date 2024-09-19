@@ -1,0 +1,27 @@
+/* app.component.css */
+/* ngIf Example */
+.Model{
+    height: max-content;
+    width: 500px;
+    padding : 13px;
+    z-index: 1000;
+    position: absolute;    
+    top: 30%;
+    left: 30%;
+    background: lightblue;       
+    animation: moveDown 2s ease;
+}
+.Model div{
+    display: flex;
+    justify-content: space-between;
+}
+/* Define the keyframes for the animation */
+@keyframes moveDown {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 197px;
+    }    
+  }
+  
