@@ -1,0 +1,36 @@
+<div>ngClass and ngStyle are two powerful built-in directives that allow you to dynamically set CSS classes and inline styles on elements based on conditions in your component.</div>
+<hr>
+<div><strong>ngClass Directive : </strong> ngClass dynamically adds or removes CSS classes to elements based on a condition.</div>
+<div>Syntax : [ngClass]="classExpression"</div>
+<div>Examples:<br><br>
+  1. Adding a single class conditionally:</div>
+<div [ngClass]="{'active': isActive}">This div is active</div>
+<div>Here above, the active class will be added to the div if isActive is true.</div>
+<hr>
+<div>2. Adding multiple classes based on conditions:</div>
+<div [ngClass]="{'active': isActive, 'disabled': isDisabled}">
+  This div can be active or disabled
+</div>
+<div>In this case, active will be applied if isActive is true, and disabled will be applied if isDisabled is true.</div>
+<hr>
+<div>3. Binding to an array of class names:</div>
+<div [ngClass]="['class1', 'class2', isActive ? 'active' : 'inactive']">
+  This div has multiple classes
+</div>
+<hr>
+<div><strong>ngStyle Directive</strong></div>
+ngStyle allows you to set inline styles dynamically on elements.
+<div>Syntax: [ngStyle]="styleExpression"
+</div>
+<div>Examples: <br><br>
+  1. Applying a single style dynamically:</div>
+  <div [ngStyle]="{'color': textColor}">This text has dynamic color</div>
+  <hr>
+<div>2. Applying multiple styles dynamically:</div>
+<div [ngStyle]="{'color': textColor2, 'font-size': fontSize}">
+  This text has dynamic color and font size
+</div><hr>
+<div>3. Conditional styles:</div>
+<div [ngStyle]="{ 'background-color': isActive ? 'green' : 'red' }">
+  This div has conditional background color
+</div>
