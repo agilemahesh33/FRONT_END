@@ -1,0 +1,12 @@
+<div class="Header">
+My Store
+</div>
+<Div class="Products">
+  <div class="Product" *ngFor="let i of StoreProducts">
+  <img src={{i.image}} alt="{{i.title}}" height="100">
+  <div>{{dt | date:"dd/MM/YYYY"}}</div><hr>
+  <div>{{i.title | uppercase}}</div>
+  <hr>
+  <div>Price : {{i.price | currency:"INR"}} <button class="button">Add To Cart</button></div>  
+  </div>
+</Div>

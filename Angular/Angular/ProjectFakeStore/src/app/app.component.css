@@ -1,0 +1,31 @@
+.Header{
+    background-color: black;
+    text-decoration-color: aliceblue;
+}
+.Products {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    flex-direction: column;
+}
+.button{
+    background-color: paleturquoise;
+}
+.button:hover{
+    align-items: center;    
+    border-radius: 5px;
+    background-color: hsl(58, 100%, 54%);    
+    transform: scale(1.10);
+    transition:background-color 1s ease-in-out;    
+}
+.Product {
+    padding: 50px;
+    border-radius: 7px; 
+    box-shadow: 0 8px 16px lightcyan, 
+    0 16px 32px hsla(169, 85%, 54%, 0.598); /* Larger shadow on hover */    
+}
+.Product:hover{
+    background-color: #1fff66cb;
+    transform: scale(1.10);
+    transition:background-color 2s ease-in-out;
+}

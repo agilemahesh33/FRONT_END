@@ -34,3 +34,11 @@ ngStyle allows you to set inline styles dynamically on elements.
 <div [ngStyle]="{ 'background-color': isActive ? 'green' : 'red' }">
   This div has conditional background color
 </div>
+<hr><hr>
+<div><strong>Combined Example:</strong>Using both ngClass and ngStyle <br>
+  You can combine both ngClass and ngStyle on the same element to control both classes and inline styles dynamically.</div>
+  <div 
+  [ngClass]="{'active': isActive, 'inactive': !isActive}"
+  [ngStyle]="{'background-color': isActive ? 'green' : 'gray', 'font-size': '18px'}">
+  This div has dynamic class and styles
+</div>
