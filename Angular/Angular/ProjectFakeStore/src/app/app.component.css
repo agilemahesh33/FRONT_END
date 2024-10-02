@@ -1,6 +1,18 @@
 .Header{
-    background-color: black;
-    text-decoration-color: aliceblue;
+    background-color: lightblue;    
+    padding-bottom: 7px;
+    margin: 0%;
+    padding: 0%;
+}
+.HeaderImg{
+    height: 70px;
+    width: 70px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.HeaderMenu{
+    align-items: right;
+    display: flex;
 }
 .Products {
     display: grid;

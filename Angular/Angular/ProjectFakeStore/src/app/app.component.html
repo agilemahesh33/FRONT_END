@@ -1,10 +1,19 @@
 <div class="Header">
-My Store
+<p><img class="HeaderImg" src="https://millerandassociates.com/wp-content/uploads/2021/06/favicon.png" alt="My Store"></p>
+<div class="HeaderMenu">
+  <ul>
+    <li>Home</li>
+    <li>Project</li>
+    <li>Gallary</li>
+    <li>About us</li>
+    <li>Contact Us</li>
+  </ul>
+</div>
 </div>
 <Div class="Products">
   <div class="Product" *ngFor="let i of StoreProducts">
   <img src={{i.image}} alt="{{i.title}}" height="100">
-  <div>{{dt | date:"dd/MM/YYYY"}}</div><hr>
+  <div>{{dt | date:"dd/MM/YYYY HH:mm:SS"}}</div><hr>
   <div>{{i.title | uppercase}}</div>
   <hr>
   <div>Price : {{i.price | currency:"INR"}} <button class="button">Add To Cart</button></div>  
