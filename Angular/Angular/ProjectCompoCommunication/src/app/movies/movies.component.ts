@@ -9,12 +9,9 @@ import { MovieComponent } from '../movie/movie.component';
   styleUrl: './movies.component.css'
 })
 export class MoviesComponent {
-htmlURL='https://en.wikipedia.org/wiki/HTML#/media/File:HTML5_logo_and_wordmark.svg';
-cssURL='https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.png';
-javascriptURL='https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo.png';
-bootstrapURL='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png';
-angularURL ='https://logosandtypes.com/wp-content/uploads/2024/01/angular.svg';
-CSharpURL='https://e7.pngegg.com/pngimages/520/669/png-clipart-c-logo-c-programming-language-computer-icons-computer-programming-programming-miscellaneous-blue.png';
-aspdotNetURL='https://ardalis.com/static/2bcf8d1ec45106e529bb3a6176467a31/c5cb2/aspnetcore-logo.png';
-sqlURL='https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg';
+nmn2URL='https://upload.wikimedia.org/wikipedia/en/1/1b/Navra_Maza_Navsacha_2.jpg';
+SSURL='https://m.media-amazon.com/images/M/MV5BNjU4YzU3ZWItODViNS00ZTY0LWExMDMtYTViMjY3ZjllODc3XkEyXkFqcGc@._V1_.jpg';
+ekGadiURL='https://assets-in.bmscdn.com/discovery-catalog/events/et00301093-qhmgyctbvc-landscape.jpg';
+ZapatlelaURL='https://m.media-amazon.com/images/M/MV5BODhmZGE4ZDYtYjlhMS00YTk3LWEyYmYtNjI3YWMzMmM2MmMxXkEyXkFqcGc@._V1_.jpg';
+PachhadlelaURL='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1sO3QXhTJfFbcLFE-UHgs_1yTeqBNp4MeQf1HJq1pbs0oWVDJAKDXPG1HRUGFYKR49WtdVw4TBeZnoAt-8rdb67w9KPagm6gSv3Px3AtPFAkAFX_nZSRMNrOLWCB54Wsc5lcpsqIYhOk/s400/Pachadlela-.jpg';
 }
