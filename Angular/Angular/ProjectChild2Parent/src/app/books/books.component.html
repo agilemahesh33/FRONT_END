@@ -2,7 +2,9 @@
 <div class="BooksCSS">
     <h3>Books: Parent Component</h3>
     <input type="text" class="form-control form-control-lg" placeholder="Enter Book Name">
-    <button type="submit" class="btn btn-primary btn-lg">Send To Child</button>
-    <button type="submit" class="btn btn-outline-success btn-lg">Increment Child</button>
-    <app-book></app-book>
+    <button type="submit" class="btn btn-primary btn-lg" (click)="updateBook()" [ngModel]="bn">Send To Child</button>
+    <button type="submit" class="btn btn-outline-success btn-lg" (click)="IncrementChild()">Increment Child</button>
+    <app-book [IncC]="c" [bookname]="book"></app-book>
+    <h2>{{book}}</h2>
+    <button (click)="parentfun()">Call Child Nethod</button>
 </div>
