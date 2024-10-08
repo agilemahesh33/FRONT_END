@@ -8,9 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ChildComponent {
 @Input() parentCount!:number;
 p=0;
-IncreamentP() : number
+IncreamentP()
 {
-  return this.p++;
+   this.p++;
 }
 display(){
   alert("I am Found Child");

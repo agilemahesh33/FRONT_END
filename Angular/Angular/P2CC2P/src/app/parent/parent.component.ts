@@ -7,15 +7,15 @@ import { ChildComponent } from '../child/child.component';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
-  @ViewChild(ChildComponent) childComponent!: ChildComponent;
+  @ViewChild(ChildComponent) ChildComp!: ChildComponent;
 c = 0;
 p1=0
 IncreamentC(){
   this.c++;
 }
 ngAfterViewInit(){
-  console.log(this.childComponent.p);
-  this.p1=this.childComponent.p;
-  this.childComponent.display();
+  console.log(this.ChildComp.p);
+  this.p1=this.ChildComp.p;
+  //this.ChildComp.display();
 }
 }
