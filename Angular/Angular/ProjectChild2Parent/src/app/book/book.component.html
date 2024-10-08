@@ -1,9 +1,9 @@
 
 <div class="bookChild">
-    <h3>I am Child element</h3>
-    <input type="text" class="form-control form-control-lg" placeholder="Enter Book Name">
-    <button type="submit" class="btn btn-primary btn-lg">Send To Parent</button>
-    <button type="submit" class="btn btn-outline-success btn-lg">Increment Parent</button>
+    <h3>I am Child Component</h3>
+    <input type="text" class="form-control form-control-lg" [ngModel]="childbook" placeholder="Enter Book Name">
+    <button type="submit" class="btn btn-primary btn-lg" >Send To Parent</button>
+    <button type="submit" class="btn btn-outline-success btn-lg" (click)="btnClick()">Increment Parent</button>
     <h3>{{IncC}}</h3>
-    <h2>{{bookname}}</h2>
+    <h2>{{bookname}}</h2>    
 </div>
