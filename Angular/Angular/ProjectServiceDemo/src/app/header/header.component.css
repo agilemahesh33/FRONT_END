@@ -1,0 +1,29 @@
+header{
+    padding: 10px 0px;
+    background-color: #222;
+}
+.menu{
+    margin: 12px;
+}
+.menu ul{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.menu ul li:hover{
+    /* color: aqua; */
+    background-color: azure;    
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+p{
+    color: white;
+}
