@@ -9,8 +9,8 @@ export class ChildComponent {
 @Input() parentCount!:number;
 p=0;
 IncreamentP()
-{
-   this.p++;
+{  
+  this.p++;
 }
 display(){
   alert("I am Found Child");

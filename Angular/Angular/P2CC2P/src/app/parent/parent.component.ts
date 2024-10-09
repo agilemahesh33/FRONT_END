@@ -14,8 +14,8 @@ IncreamentC(){
   this.c++;
 }
 ngAfterViewInit(){
-  console.log(this.ChildComp.p);
+  console.log(this.ChildComp.IncreamentP());
   this.p1=this.ChildComp.p;
-  //this.ChildComp.display();
+  this.ChildComp.display();
 }
 }
