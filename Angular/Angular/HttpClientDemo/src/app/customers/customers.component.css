@@ -1,0 +1,15 @@
+table {
+    width: max-content;
+    border-collapse: collapse; /* Ensures that the borders don't double up */
+  }
+  
+  th, td {
+    border: 3px solid rgb(8, 243, 35); /* Adds border to table cells */
+    padding: 8px;            /* Adds some padding inside the cells */
+    text-align: left;        /* Aligns text to the left */
+  }
+  
+  thead {
+    background-color: #72a905; /* Adds a light background to the header */
+  }
+  

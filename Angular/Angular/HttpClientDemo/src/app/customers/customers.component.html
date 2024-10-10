@@ -1,0 +1,21 @@
+<h2>Data from Static Constant service Variable</h2>
+<div *ngFor="let c of staticUsers">
+    <p>{{c.userID}} {{c.userName}}</p>
+</div>
+<hr>
+<h2>Data from API included in service</h2>
+<table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>email</th>
+            <th>Operations</th>
+            </tr>
+        </thead>
+<tbody *ngFor="let c of APIUsers">
+    <tr>
+        <td>{{c.name}}</td><td>{{c.username}}</td><td>{{c.email}}</td><td><button>Edit</button>&nbsp;<button>Delete</button></td>
+    </tr>
+</tbody>
+</table>
