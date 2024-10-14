@@ -7,6 +7,7 @@ import { LoansComponent } from './loans/loans.component';
 import { LoantypesComponent } from './loantypes/loantypes.component';
 import { AddLoansComponent } from './add-loans/add-loans.component';
 import { ProductsComponent } from './products/products.component';
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductsComponent } from './products/products.component';
     LoansComponent,
     LoantypesComponent,
     AddLoansComponent,
-    ProductsComponent
+    ProductsComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,

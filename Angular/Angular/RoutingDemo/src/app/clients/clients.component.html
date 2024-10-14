@@ -1,0 +1,26 @@
+<p>clients works!</p>
+<a [routerLink]="'/loans'">Loans Static Link</a>
+<table>
+    <th>Client ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Static Links</th>
+    <th>Dynamic Links 1</th>
+    <th>Dynamic Links 2</th>
+    <th>Dynamic Links 3</th>
+    <tr *ngFor="let client of clientList">
+        <td>{{client.clientId}}</td>
+        <td>{{client.firstName}}</td>
+        <td>{{client.lastName}}</td>
+        <!-- localhost:4200/edit -->
+        <td><a [routerLink]="'/edit'">Edit</a> | <a [routerLink]="'/delete'">Delete</a></td> 
+        <!-- localhost:4200/edit/77
+        localhost:4200/delete/33 -->
+        <td><a [routerLink]="['/edit',client.clientId]">Dynamic Edit</a> | <a [routerLink]="['/delete',client.clientId]">Dynamic Delete</a></td>
+        <!-- localhost:4200/client/edit/77
+        localhost:4200/client/delete/33 -->
+        <td><a [routerLink]="['edit',client.clientId]">Dynamic Edit</a> | <a [routerLink]="['delete',client.clientId]">Dynamic Delete</a></td>
+        <!-- passing multiple parameters in single URL  -->
+        <td><a [routerLink]="['edit',client.clientId,'firstName',client.firstName]">Dynamic Edit</a> | <a [routerLink]="['delete',client.clientId,'firstName',client.firstName]">Dynamic Delete</a></td>
+    </tr>
+</table>
