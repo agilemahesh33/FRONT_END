@@ -8,6 +8,9 @@ import { LoantypesComponent } from './loantypes/loantypes.component';
 import { AddLoansComponent } from './add-loans/add-loans.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { LeadsComponent } from './leads/leads.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ClientsComponent } from './clients/clients.component';
     LoantypesComponent,
     AddLoansComponent,
     ProductsComponent,
-    ClientsComponent
+    ClientsComponent,
+    ContactsComponent,
+    LeadsComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

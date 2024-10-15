@@ -5,12 +5,16 @@ import { LoantypesComponent } from './loantypes/loantypes.component';
 import { AddLoansComponent } from './add-loans/add-loans.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {path:'product/:id', component: ProductsComponent},
   {path:'product/:ProductID/Photos/:PhotoId', component:ProductsComponent},
   {
     path:'clients', component:ClientsComponent
+  },
+  {
+    path:'search',component:SearchComponent
   }
 ];
 
