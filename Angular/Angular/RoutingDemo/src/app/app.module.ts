@@ -11,6 +11,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LeadsComponent } from './leads/leads.component';
 import { SearchComponent } from './search/search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SearchComponent } from './search/search.component';
     ClientsComponent,
     ContactsComponent,
     LeadsComponent,
-    SearchComponent
+    SearchComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

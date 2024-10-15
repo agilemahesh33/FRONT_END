@@ -6,6 +6,7 @@ import { AddLoansComponent } from './add-loans/add-loans.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
 import { SearchComponent } from './search/search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path:'product/:id', component: ProductsComponent},
@@ -15,6 +16,10 @@ const routes: Routes = [
   },
   {
     path:'search',component:SearchComponent
+  },
+  {
+    path:'**',
+    component:PageNotFoundComponent
   }
 ];
 
