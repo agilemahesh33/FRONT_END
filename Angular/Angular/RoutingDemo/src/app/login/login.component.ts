@@ -17,7 +17,7 @@ export class LoginComponent {
   login()
   {
     //Temp storage of token random number at local storage
-    localStorage.setItem('token',Math.random().toString());
+    localStorage.setItem('token',Math.random().toString());    
     this.router.navigate(['dashboard']);
   }
 }

@@ -10,26 +10,26 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { authguardGuard } from './authguard.guard';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import{adminGuard} from './Guards/admin.guard'
+//import { adminGuard } from './Guards/admin.guard';
 
 const routes: Routes = [
-  // {path:'product/:id', component: ProductsComponent},
-  // {path:'product/:ProductID/Photos/:PhotoId', component:ProductsComponent},
-  // {
-  //   path:'clients', component:ClientsComponent,
-  //   canActivate:[authguardGuard]   // if it returns true then clients 
-  //                                   //component will be accessed else not
-  // },
   {
     path:'',component:LoginComponent
   },
   {
     path:'dashboard', component:DashboardComponent,
-    canActivate:[adminGuard]
-  },  
+    canActivate: [authguardGuard]
+  },
   {
     path:'search',component:SearchComponent
-  }
+  },
+  {path:'product/:id', component: ProductsComponent},
+  {path:'product/:ProductID/Photos/:PhotoId', component:ProductsComponent},
+  {
+    path:'clients', component:ClientsComponent,
+    canActivate:[authguardGuard]   // if it returns true then clients 
+                                    //component will be accessed else not
+  },
 ];
 
 @NgModule({
