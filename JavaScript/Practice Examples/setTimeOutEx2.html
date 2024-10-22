@@ -1,0 +1,25 @@
+<!-- https://www.youtube.com/watch?v=JRevaOwNKTI -->
+
+<script>
+//   setTimeout(()=>{
+//     alert("Hello Instant")
+//   }
+//   ,0);
+
+//   setTimeout(()=>{
+//     alert("Hello after 3 seconds")
+//   }
+//   ,3000);  
+ let count =0;
+// setInterval(() => {
+//   count+=3;
+//   alert("setInterval Every" + count + " Seconds");
+// }, 3000);
+// setInterval(() => {
+//   alert("setInterval Every 0 Seconds");
+// }, 0);
+const countInterval = setInterval(() => {
+  if (count=== 5){clearInterval(count)}
+  else{console.log(count++);}
+}, 1000);
+</script>

@@ -1,0 +1,39 @@
+<!-- https://www.youtube.com/watch?v=5_yOH6tkPZI -->
+<button onclick="myDefaultFunction()">Default Values</button>
+<button onclick="mySetTimeFunction()">Wait 3 seconds</button>
+<button onclick="mySet1ParaFunction('Mahesh')">With 1 Parameter Wait 3 seconds</button>
+<button onclick="mySet2ParaFunction('Mahesh','Baradkar')">With 2 Parameter Wait 3 seconds</button>
+<script>
+let timeout;
+function myDefaultFunction() {
+  timeout = setTimeout(alertFunc);
+}
+function alertFunc() {
+  alert("Hello!");
+}
+console.log("====Wait 3 seconds====");
+function mySetTimeFunction() {
+  timeout = setTimeout(alertFunc,3000);
+}
+function alertFunc() {
+  alert("Hello!");
+}
+console.log("====Wait 3 Seconds: Hello Mahesh====");
+function mySet1ParaFunction(firstName) {
+  timeout = setTimeout(alertFunc,3000,firstName);
+}
+function alertFunc(firstName) {
+  alert("Hello! " + firstName);
+}
+console.log("====Wait 3 Seconds: Hello Mahesh Baradkar====");
+function mySet2ParaFunction(firstName, lastName) {
+  timeout = setTimeout(alertFunc,3000,firstName,lastName);
+}
+function alertFunc(firstName,lastName) {
+  alert("Hello! " + firstName + " " + lastName);
+}
+console.log("====On every Page Load for loop will execute====");
+for(i =0 ; i<5 ; i++){
+        console.log(" i : " + i);
+    }
+</script>
