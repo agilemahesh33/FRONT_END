@@ -1,0 +1,16 @@
+<label for="firstName" >First Name : </label><br>
+<input [(ngModel)]="firstName" placeholder="First Name">
+<p>{{firstName}}</p>
+
+<label for="lastName"> Last Name</label><br>
+<input [(ngModel)]="lastName" id="lastName">
+<p> {{lastName}}</p>
+
+<label for ="country">Select Country</label>
+<select [(ngModel)]="selectedCountry" id="country">
+    <option *ngFor="let country of Countries" [value]="country">
+        {{country}}
+    </option>
+</select>
+
+<p> You Selected {{selectedCountry}}</p>
