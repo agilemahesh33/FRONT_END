@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   country="";
-  selectedCountry="";
-  Countries= ['India','Germany','US','UK','Africa'];
+  selectedCountry: string ="";
+  Countries:string[]= ['India','Germany','US','UK','Africa'];
   firstName = "";
   lastName = "";
 }
