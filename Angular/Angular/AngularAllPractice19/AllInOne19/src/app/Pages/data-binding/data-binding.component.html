@@ -1,0 +1,51 @@
+<p>data-binding works!</p>
+<h2>Hello From Data Binding</h2>
+
+<div class="col-3">
+    Employee Name : <span>{{empName}}</span>
+</div>
+<div class="col-3">
+    Date of Joining : {{DOJ}}
+</div>
+<div class="col-3">
+    Active : <label>{{isActive}}</label>
+</div>
+
+<br>
+<br>
+<div class="row">
+    <div class="col-3">
+        <input type="text" [(ngModel)]="empName" [value]="empName">
+    </div>
+    <div class="col-3">
+        <div [class]="bgcolor">
+            bg color
+        </div>
+    </div>
+    <div class="col-3">
+        <input [type]="myinputt" id="radio">
+        <label for="radio">This is radio</label>
+    </div>
+    <div class="col-3">
+        <input [type]="mycheckbox" id="mycheckbox" [checked]="isActive">
+        <label for="mycheckbox">This is Checkbox</label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <button class="bt-success" (click)="getAlert()">Show Alert</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click) = "ChangeCourse('React')">Show React</button>
+        <button class="btn btn-success" (click) ="ChangeCourse('Dot Net')">Show DotNet</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <select [(ngModel)]="SelectedCity" (change)="CityChanged()">
+            <option value="Nashik">Nashik</option>
+            <option value="Nashik">Pune</option>
+            <option value="Nashik">Mumbai</option>
+        </select>
+    </div>
+</div>

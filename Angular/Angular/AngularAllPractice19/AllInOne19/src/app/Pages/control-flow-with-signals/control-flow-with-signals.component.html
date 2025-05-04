@@ -1,0 +1,41 @@
+<p>Control Clow With Wignals Works!</p>
+<div class="row">
+    <div class="col-3">
+        @if(txthideshow)
+        {
+        <input type="text" placeholder="Enter Input">
+        }@else {
+        <P>else section</P>
+        }
+        <br>
+        <button class="btn btn-success" (click)="ShowHide()">Show</button>
+        <button class="btn btn-danger" (click)="ShowHide()">Hide</button>
+        <br>
+        <button class="btn btn-success" (click)="SignalShow()">Signal Show</button>
+        <button class="btn btn-danger" (click)="SignalHide()">Signal Hide</button>
+    </div>
+    <div class="col-3">
+        <input *ngIf="txtisVisible()" type="text" placeholder="Hide Show">
+    </div>
+    <div class="col-3">
+        @if (txtisVisible())
+        {
+        <label>{{txthideshow}}</label><br>
+        <label>{{txtisVisible()}}</label>
+        }
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <ul>
+            @for (item of myarr; track $index) {
+            <li>{{item}}</li>
+            }
+        </ul>
+    </div>
+    <div class="col-3">
+        <ul>
+            <li *ngFor="let day of myarr">{{day}}</li>
+        </ul>
+    </div>
+</div>
